@@ -1,0 +1,39 @@
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.team.before.kiitekudasai">
+
+    <uses-permission android:name="android.permission.RECORD_AUDIO"></uses-permission>
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <!-- 진동 권한
+    <uses-permission android:name="android.permission.VIBRATE" />
+    -->
+
+    <!-- 네트워크 상태 체크
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    -->
+
+    <!-- 인터넷 사용 권한
+    <uses-permission android:name="android.permission.INTERNET" />
+    -->
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="애니말랑!"
+        android:largeHeap="true"
+        android:hardwareAccelerated="true"
+        android:theme="@android:style/Theme.Translucent.NoTitleBar.Fullscreen">
+        <activity
+            android:name="com.team.before.animalang.GameActivity"
+            android:screenOrientation="landscape"
+            android:configChanges="keyboard|keyboardHidden|orientation">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
